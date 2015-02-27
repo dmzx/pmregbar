@@ -22,6 +22,6 @@ $lang = array_merge($lang, array(
 	'PMG_WELCOME'		=> 'Welcome to',
     'PMG_REGISTER'		=> 'Click here to register', 
     'PMG_HELLO'			=> 'Hello',	
-    'PMG_YOUHAVE'		=> '- You have a PM',
+    'PMG_YOUHAVE'		=> '- You have a Private Message',
 	'PMG_AND'			=> 'and',
 )); 
