@@ -1,0 +1,5 @@
+services:
+    dmzx.pmregbar.listener:
+        class: dmzx\pmregbar\event\listener
+        tags:
+            - { name: event.listener }

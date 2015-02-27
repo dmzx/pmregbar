@@ -1,0 +1,45 @@
+/**
+*
+* @package PM Notify & Guest Register bar extension.
+* @author dmzx (www.dmzx-web.net)
+* @copyright (c) 2015 by dmzx (www.dmzx-web.net)
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* 
+*/
+
+#info {
+    overflow: visible;
+	min-width: 750px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    z-index:200;
+    margin-top: -15px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+	font-weight: bold;
+}
+
+#infobar a, #infobar a:link, #infobar a:visited, #infobar a:active {
+    display: block;
+    float: left;
+    width:100%;
+    clear: both;
+    color: #fff;
+    padding: .85em 0 .85em 0;
+    border-bottom: .25em solid #fff;
+	text-align: center;
+    text-decoration: none;
+	background-image: url("./images/pmreg.png");
+	background-position: bottom;
+	background-repeat:repeat-x;
+}
+
+#infobar a:hover {
+    color: #fff;
+	background-image: url("./images/pmreg.png");
+	background-position: top;
+	background-repeat:repeat-x;
+	border-bottom: .25em solid #fff;
+	cursor: pointer;
+}
