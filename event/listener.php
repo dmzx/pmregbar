@@ -48,6 +48,8 @@ class listener implements EventSubscriberInterface
 		$this->template->assign_vars(array(
 		'PMREGBAR_ENABLEPM'			=> $this->config['pmregbar_enablepm'] ? true : false,
 		'PMREGBAR_ENABLEREG'		=> $this->config['pmregbar_enablereg'] ? true : false,
+		'PMREGBAR_ENABLE_TEXT'		=> $this->config['pmregbar_enable_text'] ? true : false,
+		'PMREGBAR_TEXT_FIELD'	=> (isset($this->config['pmregbar_text_field'])) ? $this->config['pmregbar_text_field'] : '',
 		));
 	}
 	

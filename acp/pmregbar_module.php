@@ -32,6 +32,8 @@ var $u_action;
 			}
 			$config->set('pmregbar_enablepm', $request->variable('pmregbar_enablepm', 0));
 			$config->set('pmregbar_enablereg', $request->variable('pmregbar_enablereg', 0));
+			$config->set('pmregbar_enable_text', $request->variable('pmregbar_enable_text', 0));
+			$config->set('pmregbar_text_field', $request->variable('pmregbar_text_field', ''));
 		
 
 			trigger_error($user->lang['PMREGBAR_CONFIG_SAVED'] . adm_back_link($this->u_action));
@@ -40,6 +42,8 @@ var $u_action;
 			'PMREGBAR_VERSION'			=> (isset($config['pmregbar_version'])) ? $config['pmregbar_version'] : '',
 			'PMREGBAR_ENABLEPM'			=> (!empty($config['pmregbar_enablepm'])) ? true : false,
 			'PMREGBAR_ENABLEREG'		=> (!empty($config['pmregbar_enablereg'])) ? true : false,
+			'PMREGBAR_ENABLE_TEXT'		=> (!empty($config['pmregbar_enable_text'])) ? true : false,
+			'PMREGBAR_TEXT_FIELD'	=> (isset($config['pmregbar_text_field'])) ? $config['pmregbar_text_field'] : '',
 			'U_ACTION'					=> $this->u_action,
 		));
 	}
