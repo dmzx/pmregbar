@@ -3,8 +3,8 @@
     "type": "phpbb-extension",
     "description": "This extension will add PM Notify & Guest Register bar.",
     "homepage": "http://www.dmzx-web.net",
-    "version": "1.0.0",
-    "time": "2015-02-27",
+    "version": "1.0.1",
+    "time": "2014-11-25",
 	"keywords": ["phpbb", "extension", "pmregbar"],
     "license": "GPL-2.0",
     "authors": [

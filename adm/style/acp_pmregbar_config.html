@@ -1,0 +1,33 @@
+<!-- INCLUDE overall_header.html -->
+	<h1>{L_ACP_PMREGBAR_CONFIG}</h1>
+
+	<p>{L_PMREGBAR_VERSION} {PMREGBAR_VERSION}</p>
+
+	<form id="acp_pmregbar_config" method="post" action="{U_ACTION}">
+	
+	<fieldset>
+	<legend>{L_ACP_PMREGBAR_CONFIG_SET}</legend>	
+	<dl>
+		<dt><label for="pmregbar_enablepm">{L_PMREGBAR_ENABLEPM}{L_COLON}</label><br />
+		<span>{L_PMREGBAR_ENABLEPM_EXPLAIN}</span></dt>
+		<dd><label><input type="radio" class="radio" name="pmregbar_enablepm" value="1"<!-- IF PMREGBAR_ENABLEPM --> id="pmregbar_enablepm" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+		<label><input type="radio" class="radio" name="pmregbar_enablepm" value="0"<!-- IF not PMREGBAR_ENABLEPM --> id="pmregbar_enablepm" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+	</dl>
+	<dl>
+		<dt><label for="pmregbar_enablereg">{L_PMREGBAR_ENABLEREG}{L_COLON}</label><br />
+		<span>{L_PMREGBAR_ENABLEREG_EXPLAIN}</span></dt>
+		<dd><label><input type="radio" class="radio" name="pmregbar_enablereg" value="1"<!-- IF PMREGBAR_ENABLEREG --> id="pmregbar_enablereg" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+		<label><input type="radio" class="radio" name="pmregbar_enablereg" value="0"<!-- IF not PMREGBAR_ENABLEREG --> id="pmregbar_enablereg" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
+	</dl>
+	
+	<p class="submit-buttons">
+		<input type="hidden" name="action" value="save" />
+
+		<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
+		<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
+		{S_FORM_TOKEN}
+	</p>
+	</fieldset>
+	</form>
+
+<!-- INCLUDE overall_footer.html -->

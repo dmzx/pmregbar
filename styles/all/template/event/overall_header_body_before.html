@@ -1,10 +1,10 @@
-<!-- IF not S_USER_LOGGED_IN and not S_IS_BOT and not S_IN_UCP -->
+<!-- IF not S_USER_LOGGED_IN and not S_IS_BOT and not S_IN_UCP and PMREGBAR_ENABLEREG -->
 <div id="info"><div id="infobar">
 <a href="{U_REGISTER}"><img style="width: 50px; height: 50px; padding-right: 100px; vertical-align:middle;" alt="" src="ext/dmzx/pmregbar/styles/all/theme/images/reg.png" />{L_PMG_WELCOME} {SITENAME}. {L_PMG_REGISTER}<img style="width: 50px; height: 50px; padding-left:100px; vertical-align:middle;" alt="" src="ext/dmzx/pmregbar/styles/all/theme/images/reg.png" /></a>
 </div></div>
 <!-- ENDIF -->
 
-<!-- IF not S_IS_BOT and S_USER_LOGGED_IN and S_DISPLAY_PM and (S_USER_NEW_PRIVMSG or S_USER_UNREAD_PRIVMSG) -->
+<!-- IF not S_IS_BOT and S_USER_LOGGED_IN and S_DISPLAY_PM and (S_USER_NEW_PRIVMSG or S_USER_UNREAD_PRIVMSG) and PMREGBAR_ENABLEPM -->
 <div id="info"><div id="infobar">
 <a href="{U_PRIVATEMSGS}"><img style="width:50px; height: 50px; padding-right: 100px; vertical-align:middle;" alt="" src="ext/dmzx/pmregbar/styles/all/theme/images/mail.png" />{L_PMG_HELLO} {S_USERNAME} {L_PMG_YOUHAVE} {PRIVATE_MESSAGE_INFO}<!-- IF PRIVATE_MESSAGE_INFO_UNREAD --> {L_PMG_AND} {PRIVATE_MESSAGE_INFO_UNREAD}<!-- ENDIF --><img style="width: 50px; height: 50px; padding-left:100px; vertical-align:middle;" alt="" src="ext/dmzx/pmregbar/styles/all/theme/images/mail.png" /></a>
 </div></div>

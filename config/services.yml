@@ -1,5 +1,9 @@
 services:
     dmzx.pmregbar.listener:
         class: dmzx\pmregbar\event\listener
+        arguments:
+            - @controller.helper
+            - @template		
+            - @config			
         tags:
             - { name: event.listener }
