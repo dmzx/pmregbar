@@ -24,7 +24,6 @@ $lang = array_merge($lang, array(
     'PMREGBAR_HELLO'			    => 'Hello',	
     'PMREGBAR_YOUHAVE'		        => '- You have a private message',
 	'PMREGBAR_AND'			        => 'and',
-	'PMREGVERSION_VERSION'	        => 'Version',
 	'PMREGBAR_CONFIG_SAVED'		    => 'PM Notify & Guest Register bar settings saved',	
 	'PMREGBAR_VERSION'			    => 'Version',	
 	'PMREGBAR_ENABLEPM'			    => 'Enable private message bar',

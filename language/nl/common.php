@@ -24,7 +24,6 @@ $lang = array_merge($lang, array(
     'PMREGBAR_HELLO'			    => 'Hallo',	
     'PMREGBAR_YOUHAVE'		        => '- Je hebt een prive bericht',
 	'PMREGBAR_AND'			        => 'en',
-	'PMREGVERSION_VERSION'	        => 'Versie',
 	'PMREGBAR_CONFIG_SAVED'		    => 'PM Notificatie & Guest Registratie bar instellingen zijn opgeslagen',	
 	'PMREGBAR_VERSION'			    => 'Versie',	
 	'PMREGBAR_ENABLEPM'			    => 'Inschakelen prive berichten balk',
