@@ -31,8 +31,8 @@ $lang = array_merge($lang, array(
 	'PMREGBAR_ENABLEPM_EXPLAIN'	    => 'Enable or disable private message bar',
 	'PMREGBAR_ENABLEREG'		    => 'Enable register bar',
 	'PMREGBAR_ENABLEREG_EXPLAIN'    => 'Enable or disable register bar',
-	'PMREGBAR_ENABLE_TEXT'		    => 'Enable alternative text',
-	'PMREGBAR_ENABLE_TEXT_EXPLAIN'  => 'If yes fill in text field below for alternative text',
-	'PMREGBAR_TEXT_FIELD'           => 'Alternative text field',
+	'PMREGBAR_ENABLE_TEXT'		    => 'Enable alternative text for guest register bar',
+	'PMREGBAR_ENABLE_TEXT_EXPLAIN'  => 'If Yes fill in text field below for alternative guest register bar',
+	'PMREGBAR_TEXT_FIELD'           => 'Alternative text field for guest register bar',
     'PMREGBAR_TEXT_FIELD_EXPLAIN'	=> 'Fill in the alternative text',
 )); 
