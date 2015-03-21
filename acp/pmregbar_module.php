@@ -22,7 +22,7 @@ var $u_action;
 		$this->tpl_name = 'acp_pmregbar_config';
 		$this->page_title = $user->lang['ACP_PMREGBAR_CONFIG_SETTINGS'];
 		add_form_key('acp_pmregbar_config');
-		
+
 		$submit = $request->is_set_post('submit');
 		if ($submit)
 		{
@@ -34,7 +34,6 @@ var $u_action;
 			$config->set('pmregbar_enablereg', $request->variable('pmregbar_enablereg', 0));
 			$config->set('pmregbar_enable_text', $request->variable('pmregbar_enable_text', 0));
 			$config->set('pmregbar_text_field', $request->variable('pmregbar_text_field', ''));
-		
 
 			trigger_error($user->lang['PMREGBAR_CONFIG_SAVED'] . adm_back_link($this->u_action));
 		}

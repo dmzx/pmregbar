@@ -18,8 +18,8 @@ if (empty($lang) || !is_array($lang))
 }
 
 $lang = array_merge($lang, array(
-	'ACP_PMREGBAR'			            => 'PM Notificatie & Gast regestratie bar',
+	'ACP_PMREGBAR'						=> 'PM Notificatie & Gast regestratie bar',
 	'ACP_PMREGBAR_CONFIG_SETTINGS'		=> 'Instellingen',
-	'ACP_PMREGBAR_CONFIG_SET'	        => 'Configuratie',	
+	'ACP_PMREGBAR_CONFIG_SET'			=> 'Configuratie',
 ));
 

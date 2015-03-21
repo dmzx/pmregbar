@@ -12,15 +12,15 @@ namespace dmzx\pmregbar\migrations;
 
 class pmregbar_module extends \phpbb\db\migration\migration
 {
-	
+
 	public function update_data()
 	{
 		return array(
-		    array('module.add', array('acp', 'ACP_CAT_DOT_MODS', 'ACP_PMREGBAR')),
+			array('module.add', array('acp', 'ACP_CAT_DOT_MODS', 'ACP_PMREGBAR')),
 			array('module.add', array(
 			'acp', 'ACP_PMREGBAR', array(
 			'module_basename'	=> '\dmzx\pmregbar\acp\pmregbar_module', 'modes'	  => array('config'),
-		       ),
+			   ),
 			)),
 		);
 	}

@@ -12,9 +12,9 @@ namespace dmzx\pmregbar\acp;
 
 class pmregbar_info
  {
-    function module()
-    {
-         return array(
+	function module()
+	{
+		 return array(
 			'filename'	=> '\dmzx\pmregbar\acp\pmregbar_module',
 			'title'		=> 'ACP_PMREGBAR',
 			'modes'		=> array(

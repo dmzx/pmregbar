@@ -3,7 +3,7 @@ services:
         class: dmzx\pmregbar\event\listener
         arguments:
             - @controller.helper
-            - @template		
-            - @config			
+            - @template
+            - @config
         tags:
             - { name: event.listener }

@@ -4,9 +4,9 @@
 	<p>{L_PMREGBAR_VERSION}{L_COLON} {PMREGBAR_VERSION}</p>
 
 	<form id="acp_pmregbar_config" method="post" action="{U_ACTION}">
-	
+
 	<fieldset>
-	<legend>{L_ACP_PMREGBAR_CONFIG_SET}</legend>	
+	<legend>{L_ACP_PMREGBAR_CONFIG_SET}</legend>
 	<dl>
 		<dt><label for="pmregbar_enablepm">{L_PMREGBAR_ENABLEPM}{L_COLON}</label><br />
 		<span>{L_PMREGBAR_ENABLEPM_EXPLAIN}</span></dt>
@@ -26,11 +26,11 @@
 		<label><input type="radio" class="radio" name="pmregbar_enable_text" value="0"<!-- IF not PMREGBAR_ENABLE_TEXT --> id="pmregbar_enable_text" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
 	</dl>
 	<dl>
-        <dt><label for="pmregbar_text_field">{L_PMREGBAR_TEXT_FIELD}{L_COLON}</label><br />
-        <span>{L_PMREGBAR_TEXT_FIELD_EXPLAIN}</span></dt>
-        <dd><input name="pmregbar_text_field" type="text" id="pmregbar_text_field" class="text medium" value="{PMREGBAR_TEXT_FIELD}"  maxlength="255" /></dd>
-     </dl>
-	
+		<dt><label for="pmregbar_text_field">{L_PMREGBAR_TEXT_FIELD}{L_COLON}</label><br />
+		<span>{L_PMREGBAR_TEXT_FIELD_EXPLAIN}</span></dt>
+		<dd><input name="pmregbar_text_field" type="text" id="pmregbar_text_field" class="text medium" value="{PMREGBAR_TEXT_FIELD}"  maxlength="255" /></dd>
+	 </dl>
+
 	<p class="submit-buttons">
 		<input type="hidden" name="action" value="save" />
 

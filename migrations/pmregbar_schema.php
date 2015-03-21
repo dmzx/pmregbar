@@ -12,7 +12,7 @@ namespace dmzx\pmregbar\migrations;
 
 class pmregbar_schema extends \phpbb\db\migration\migration
 {
-	
+
 	public function update_data()
 	{
 		return array(
@@ -24,7 +24,7 @@ class pmregbar_schema extends \phpbb\db\migration\migration
 			array('config.add', array('pmregbar_version', '1.0.2')),
 		);
 	}
-	
+
 	public function revert_data()
 	{
 		return array(
