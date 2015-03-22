@@ -19,8 +19,8 @@ if (empty($lang) || !is_array($lang))
 }
 
 $lang = array_merge($lang, array(
-	'ACP_PMREGBAR'			            => 'Bandeau d’enregistrement & de notification des MP',
+	'ACP_PMREGBAR'						=> 'Bandeau d’enregistrement & de notification des MP',
 	'ACP_PMREGBAR_CONFIG_SETTINGS'		=> 'Paramètres',
-	'ACP_PMREGBAR_CONFIG_SET'	        => 'Configuration',	
+	'ACP_PMREGBAR_CONFIG_SET'			=> 'Configuration',
 ));
 
