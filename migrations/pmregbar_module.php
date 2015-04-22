@@ -19,8 +19,8 @@ class pmregbar_module extends \phpbb\db\migration\migration
 			array('module.add', array('acp', 'ACP_CAT_DOT_MODS', 'ACP_PMREGBAR')),
 			array('module.add', array(
 			'acp', 'ACP_PMREGBAR', array(
-			'module_basename'	=> '\dmzx\pmregbar\acp\pmregbar_module', 'modes'	  => array('config'),
-			   ),
+			'module_basename'	=> '\dmzx\pmregbar\acp\pmregbar_module', 'modes'		=> array('config'),
+				),
 			)),
 		);
 	}

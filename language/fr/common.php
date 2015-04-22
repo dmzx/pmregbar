@@ -32,7 +32,7 @@ $lang = array_merge($lang, array(
 	'PMREGBAR_ENABLEREG'			=> 'Activer le bandeau d’enregistrement',
 	'PMREGBAR_ENABLEREG_EXPLAIN'	=> 'Active ou désactive le bandeau invitant les invités à s’enregistrer sur le forum.',
 	'PMREGBAR_ENABLE_TEXT'			=> 'Activer le texte alternatif pour le bandeau d’enregistrement',
-	'PMREGBAR_ENABLE_TEXT_EXPLAIN'  => 'Si paramétré sur Oui veuillez remplir le champ de texte ci-dessous permettant d’afficher un message alternatif dans le bandeau d’enregistrement destiné aux invités.',
-	'PMREGBAR_TEXT_FIELD'		   => 'Champ du texte alternatif pour le bandeau d’enregistrement',
+	'PMREGBAR_ENABLE_TEXT_EXPLAIN'	=> 'Si paramétré sur Oui veuillez remplir le champ de texte ci-dessous permettant d’afficher un message alternatif dans le bandeau d’enregistrement destiné aux invités.',
+	'PMREGBAR_TEXT_FIELD'			=> 'Champ du texte alternatif pour le bandeau d’enregistrement',
 	'PMREGBAR_TEXT_FIELD_EXPLAIN'	=> 'Veuillez remplir un message alternatif pour le bandeau d’enregistrement destiné aux invités.',
 ));

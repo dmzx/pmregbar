@@ -31,7 +31,7 @@ $lang = array_merge($lang, array(
 	'PMREGBAR_ENABLEREG'			=> 'Habilitar barra de registro',
 	'PMREGBAR_ENABLEREG_EXPLAIN'	=> 'Habilitar o deshabilitar barra de registro',
 	'PMREGBAR_ENABLE_TEXT'			=> 'Habilitar texto alternativo',
-	'PMREGBAR_ENABLE_TEXT_EXPLAIN'  => 'En caso afirmativo, rellene el campo de texto de abajo para el texto alternativo',
-	'PMREGBAR_TEXT_FIELD'		   => 'Campo de texto alternativo',
+	'PMREGBAR_ENABLE_TEXT_EXPLAIN'	=> 'En caso afirmativo, rellene el campo de texto de abajo para el texto alternativo',
+	'PMREGBAR_TEXT_FIELD'			=> 'Campo de texto alternativo',
 	'PMREGBAR_TEXT_FIELD_EXPLAIN'	=> 'Rellene el texto alternativo',
 ));

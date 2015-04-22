@@ -31,7 +31,7 @@ $lang = array_merge($lang, array(
 	'PMREGBAR_ENABLEREG'			=> 'Inschakelen registratie balk',
 	'PMREGBAR_ENABLEREG_EXPLAIN'	=> 'In of Uit schakelen registratie balk',
 	'PMREGBAR_ENABLE_TEXT'			=> 'Inschakelen alternatieve tekst',
-	'PMREGBAR_ENABLE_TEXT_EXPLAIN'  => 'Als je Ja aanvinkt, vul in onderstaande tekstveld de alternatieve tekst in',
-	'PMREGBAR_TEXT_FIELD'		   => 'Alternatieve tekst veld',
+	'PMREGBAR_ENABLE_TEXT_EXPLAIN'	=> 'Als je Ja aanvinkt, vul in onderstaande tekstveld de alternatieve tekst in',
+	'PMREGBAR_TEXT_FIELD'			=> 'Alternatieve tekst veld',
 	'PMREGBAR_TEXT_FIELD_EXPLAIN'	=> 'Vul hier jouw alternatieve tekst in',
 ));
