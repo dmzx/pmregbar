@@ -14,22 +14,26 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class listener implements EventSubscriberInterface
 {
-	static public function getSubscribedEvents()
-	{
-		return array(
-			'core.user_setup' => 'load_language_on_setup',
-			'core.page_header'	=> 'add_page_header_link',
-		);
-	}
+	
 	protected $helper;
 
 	protected $template;
+	
+	protected $config;
 
 	public function __construct(\phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\config\config $config)
 	{
 		$this->helper = $helper;
 		$this->template = $template;
 		$this->config = $config;
+	}
+	
+	static public function getSubscribedEvents()
+	{
+		return array(
+			'core.user_setup' => 'load_language_on_setup',
+			'core.page_header'	=> 'add_page_header_link',
+		);
 	}
 
 	public function load_language_on_setup($event)
@@ -43,14 +47,12 @@ class listener implements EventSubscriberInterface
 	}
 
 	public function add_page_header_link($event)
-
 	{
 		$this->template->assign_vars(array(
-		'PMREGBAR_ENABLEPM'			=> $this->config['pmregbar_enablepm'] ? true : false,
-		'PMREGBAR_ENABLEREG'		=> $this->config['pmregbar_enablereg'] ? true : false,
-		'PMREGBAR_ENABLE_TEXT'		=> $this->config['pmregbar_enable_text'] ? true : false,
-		'PMREGBAR_TEXT_FIELD'	=> (isset($this->config['pmregbar_text_field'])) ? $this->config['pmregbar_text_field'] : '',
+			'PMREGBAR_ENABLEPM'			=> $this->config['pmregbar_enablepm'] ? true : false,
+			'PMREGBAR_ENABLEREG'		=> $this->config['pmregbar_enablereg'] ? true : false,
+			'PMREGBAR_ENABLE_TEXT'		=> $this->config['pmregbar_enable_text'] ? true : false,
+			'PMREGBAR_TEXT_FIELD'	=> (isset($this->config['pmregbar_text_field'])) ? $this->config['pmregbar_text_field'] : '',
 		));
 	}
-
 }

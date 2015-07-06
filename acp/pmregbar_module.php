@@ -37,6 +37,7 @@ var $u_action;
 
 			trigger_error($user->lang['PMREGBAR_CONFIG_SAVED'] . adm_back_link($this->u_action));
 		}
+		
 		$template->assign_vars(array(
 			'PMREGBAR_VERSION'			=> (isset($config['pmregbar_version'])) ? $config['pmregbar_version'] : '',
 			'PMREGBAR_ENABLEPM'			=> (!empty($config['pmregbar_enablepm'])) ? true : false,
