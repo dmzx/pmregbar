@@ -14,11 +14,11 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class listener implements EventSubscriberInterface
 {
-	
+
 	protected $helper;
 
 	protected $template;
-	
+
 	protected $config;
 
 	public function __construct(\phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\config\config $config)
@@ -27,7 +27,7 @@ class listener implements EventSubscriberInterface
 		$this->template = $template;
 		$this->config = $config;
 	}
-	
+
 	static public function getSubscribedEvents()
 	{
 		return array(
