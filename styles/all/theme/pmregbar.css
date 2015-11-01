@@ -14,7 +14,7 @@
     position: fixed;
     left: 0;
     z-index:200;
-    margin-top: -15px;
+    margin-top: -8px;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 1.5em;
 	font-weight: bold;
@@ -42,4 +42,33 @@
 	background-repeat:repeat-x;
 	border-bottom: .25em solid #fff;
 	cursor: pointer;
+}
+
+.pm-mail {
+	background: url("images/mail.png");
+	background-repeat: no-repeat;
+	padding: 20px 24px;
+	vertical-align:middle;
+}
+
+.pm-reg {
+	background: url("images/reg.png");
+	background-repeat: no-repeat;
+	padding: 20px 26px;
+	vertical-align:middle;
+}
+
+/* Responsive Layout
+--------------------------- */
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+    .pm-mail {
+        display: none;
+    }
+
+    .pm-reg{
+        display: none;
+    }
+	#info {
+		min-width: 300px;
+    }
 }

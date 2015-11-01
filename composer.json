@@ -5,7 +5,11 @@
 	"homepage": "http://www.dmzx-web.net",
 	"version": "1.0.2",
 	"time": "2014-11-25",
-	"keywords": ["phpbb", "extension", "pmregbar"],
+	"keywords": [
+		"phpbb",
+		"extension",
+		"pmregbar"
+	],
 	"license": "GPL-2.0",
 	"authors": [
 		{
@@ -29,9 +33,9 @@
 			"phpbb/phpbb": "3.1.*"
 		},
 		"version-check": {
-			"host": "www.phpbb.com",
-			"directory": "/customise/db/extension/pm_notify_guest_register_bar",
-			"filename": "version_check"
+			"host": "www.dmzx-web.net",
+			"directory": "/versions",
+			"filename": "pmregbar_version.json"
 		}
 	}
 }
