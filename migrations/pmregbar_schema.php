@@ -12,7 +12,6 @@ namespace dmzx\pmregbar\migrations;
 
 class pmregbar_schema extends \phpbb\db\migration\migration
 {
-
 	public function update_data()
 	{
 		return array(
@@ -21,7 +20,7 @@ class pmregbar_schema extends \phpbb\db\migration\migration
 			array('config.add', array('pmregbar_enablereg', '')),
 			array('config.add', array('pmregbar_enable_text', '')),
 			array('config.add', array('pmregbar_enable_text_field', '')),
-			array('config.add', array('pmregbar_version', '1.0.2')),
+			array('config.add', array('pmregbar_version', '1.0.3')),
 		);
 	}
 
@@ -33,7 +32,6 @@ class pmregbar_schema extends \phpbb\db\migration\migration
 			array('config.remove', array('pmregbar_enable_text')),
 			array('config.remove', array('pmregbar_enable_text_field')),
 			array('config.remove', array('pmregbar_version')),
-
 		);
 	}
 }

@@ -16,8 +16,7 @@ var $u_action;
 
 	function main($id, $mode)
 	{
-		global $db, $user, $auth, $template, $cache, $request;
-		global $config, $phpbb_root_path, $phpbb_admin_path, $phpEx;
+		global $user, $template, $request, $config;
 
 		$this->tpl_name = 'acp_pmregbar_config';
 		$this->page_title = $user->lang['ACP_PMREGBAR_CONFIG_SETTINGS'];
@@ -33,7 +32,7 @@ var $u_action;
 			$config->set('pmregbar_enablepm', $request->variable('pmregbar_enablepm', 0));
 			$config->set('pmregbar_enablereg', $request->variable('pmregbar_enablereg', 0));
 			$config->set('pmregbar_enable_text', $request->variable('pmregbar_enable_text', 0));
-			$config->set('pmregbar_text_field', $request->variable('pmregbar_text_field', ''));
+			$config->set('pmregbar_text_field', $request->variable('pmregbar_text_field', '', true));
 
 			trigger_error($user->lang['PMREGBAR_CONFIG_SAVED'] . adm_back_link($this->u_action));
 		}
@@ -43,7 +42,7 @@ var $u_action;
 			'PMREGBAR_ENABLEPM'			=> (!empty($config['pmregbar_enablepm'])) ? true : false,
 			'PMREGBAR_ENABLEREG'		=> (!empty($config['pmregbar_enablereg'])) ? true : false,
 			'PMREGBAR_ENABLE_TEXT'		=> (!empty($config['pmregbar_enable_text'])) ? true : false,
-			'PMREGBAR_TEXT_FIELD'	=> (isset($config['pmregbar_text_field'])) ? $config['pmregbar_text_field'] : '',
+			'PMREGBAR_TEXT_FIELD'		=> (isset($config['pmregbar_text_field'])) ? $config['pmregbar_text_field'] : '',
 			'U_ACTION'					=> $this->u_action,
 		));
 	}

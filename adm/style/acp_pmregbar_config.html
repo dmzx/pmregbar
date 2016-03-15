@@ -1,10 +1,9 @@
 <!-- INCLUDE overall_header.html -->
-	<h1>{L_ACP_PMREGBAR}</h1>
+<h1>{L_ACP_PMREGBAR}</h1>
 
-	<p>{L_PMREGBAR_VERSION}{L_COLON} {PMREGBAR_VERSION}</p>
+<p>{L_PMREGBAR_VERSION}{L_COLON} {PMREGBAR_VERSION}</p>
 
-	<form id="acp_pmregbar_config" method="post" action="{U_ACTION}">
-
+<form id="acp_pmregbar_config" method="post" action="{U_ACTION}">
 	<fieldset>
 	<legend>{L_ACP_PMREGBAR_CONFIG_SET}</legend>
 	<dl>
@@ -29,16 +28,14 @@
 		<dt><label for="pmregbar_text_field">{L_PMREGBAR_TEXT_FIELD}{L_COLON}</label><br />
 		<span>{L_PMREGBAR_TEXT_FIELD_EXPLAIN}</span></dt>
 		<dd><input name="pmregbar_text_field" type="text" id="pmregbar_text_field" class="text medium" value="{PMREGBAR_TEXT_FIELD}"	maxlength="255" /></dd>
-	 </dl>
-
+	</dl>
 	<p class="submit-buttons">
 		<input type="hidden" name="action" value="save" />
-
 		<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
 		<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
 		{S_FORM_TOKEN}
 	</p>
 	</fieldset>
-	</form>
+</form>
 
 <!-- INCLUDE overall_footer.html -->
