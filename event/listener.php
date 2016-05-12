@@ -14,9 +14,6 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class listener implements EventSubscriberInterface
 {
-	/** @var \phpbb\controller\helper */
-	protected $helper;
-
 	/** @var \phpbb\template\template */
 	protected $template;
 
@@ -26,13 +23,11 @@ class listener implements EventSubscriberInterface
 	/**
 	* Constructor
 	*
-	* @param \phpbb\controller\helper			$helper
 	* @param \phpbb\template\template			$template
 	* @param \phpbb\config\config				$config
 	*/
-	public function __construct(\phpbb\controller\helper $helper, \phpbb\template\template $template, \phpbb\config\config $config)
+	public function __construct(\phpbb\template\template $template, \phpbb\config\config $config)
 	{
-		$this->helper 	= $helper;
 		$this->template = $template;
 		$this->config 	= $config;
 	}

@@ -25,10 +25,8 @@
 		}
 	],
 	"require": {
-		"php": ">=5.3.3"
-	},
-	"require-dev": {
-		"phpbb/epv": "dev-master"
+		"php": ">=5.3.3",
+		"phpbb/phpbb": "3.1.*"
 	},
 	"extra": {
 		"display-name": "PM Notify & Guest Register bar",
@@ -36,9 +34,9 @@
 			"phpbb/phpbb": "3.1.*"
 		},
 		"version-check": {
-			"host": "www.dmzx-web.net",
-			"directory": "/versions",
-			"filename": "pmregbar_version.json"
+			"host": "www.phpbb.com",
+			"directory": "/customise/db/extension/pm_notify_guest_register_bar",
+			"filename": "version_check"
 		}
 	}
 }
