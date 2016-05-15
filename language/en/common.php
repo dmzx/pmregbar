@@ -34,10 +34,6 @@ if (empty($lang) || !is_array($lang))
 // ’ » “ ” …
 
 $lang = array_merge($lang, array(
-	'PMREGBAR_WELCOME'				=> 'Welcome to',
-	'PMREGBAR_REGISTER'				=> 'Click here to register',
-	'PMREGBAR_HELLO'				=> 'Hello',
-	'PMREGBAR_YOUHAVE'				=> 'you have a private message',
 	'PMREGBAR_CONFIG_SAVED'			=> 'PM Notify & Guest Register bar settings saved',
 	'PMREGBAR_VERSION'				=> 'Version',
 	'PMREGBAR_ENABLEPM'				=> 'Enable private message bar',
@@ -48,4 +44,6 @@ $lang = array_merge($lang, array(
 	'PMREGBAR_ENABLE_TEXT_EXPLAIN'	=> 'If Yes fill in text field below for alternative guest register bar',
 	'PMREGBAR_TEXT_FIELD'			=> 'Alternative text field for guest register bar',
 	'PMREGBAR_TEXT_FIELD_EXPLAIN'	=> 'Fill in the alternative text',
+	'PMREGBAR_MESSAGE'				=> 'Hello %s you have a private message',
+	'PMREGBAR_WELCOME'				=> 'Welcome to %s click here to register',
 ));

@@ -1,7 +1,7 @@
 <!-- IF not S_USER_LOGGED_IN and not S_IS_BOT and not S_IN_UCP and PMREGBAR_ENABLEREG -->
 <div id="info">
 	<div id="infobar">
-		<a href="{U_REGISTER}"><span class="pm-reg"></span><!-- IF not PMREGBAR_ENABLE_TEXT -->{L_PMREGBAR_WELCOME} {SITENAME}&#46; {L_PMREGBAR_REGISTER}<!-- ELSE -->{PMREGBAR_TEXT_FIELD} <!-- ENDIF --><span class="pm-reg"></span></a>
+		<a href="{U_REGISTER}"><span class="pm-reg"></span><!-- IF not PMREGBAR_ENABLE_TEXT -->{L_PMREGBAR_WELCOME}<!-- ELSE -->{PMREGBAR_TEXT_FIELD} <!-- ENDIF --><span class="pm-reg"></span></a>
 	</div>
 </div>
 <!-- ENDIF -->
@@ -9,7 +9,7 @@
 <!-- IF not S_IS_BOT and S_USER_LOGGED_IN and S_DISPLAY_PM and (S_USER_NEW_PRIVMSG or S_USER_UNREAD_PRIVMSG) and PMREGBAR_ENABLEPM -->
 <div id="info">
 	<div id="infobar">
-		<a href="{U_PRIVATEMSGS}"><span class="pm-mail"></span>{L_PMREGBAR_HELLO} {S_USERNAME} {L_PMREGBAR_YOUHAVE} {PRIVATE_MESSAGE_INFO}<span class="pm-mail"></span></a>
+		<a href="{U_PRIVATEMSGS}"><span class="pm-mail"></span>{L_PMREGBAR_PM}<span class="pm-mail"></span></a>
 	</div>
 </div>
 <!-- ENDIF -->

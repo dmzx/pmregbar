@@ -20,16 +20,21 @@ class listener implements EventSubscriberInterface
 	/** @var \phpbb\config\config */
 	protected $config;
 
+	/** @var \phpbb\user */
+	protected $user;
+
 	/**
 	* Constructor
 	*
 	* @param \phpbb\template\template			$template
 	* @param \phpbb\config\config				$config
+	* @param \phpbb\user						$user
 	*/
-	public function __construct(\phpbb\template\template $template, \phpbb\config\config $config)
+	public function __construct(\phpbb\template\template $template, \phpbb\config\config $config, \phpbb\user $user)
 	{
 		$this->template = $template;
 		$this->config 	= $config;
+		$this->user 	= $user;
 	}
 
 	static public function getSubscribedEvents()
@@ -57,6 +62,8 @@ class listener implements EventSubscriberInterface
 			'PMREGBAR_ENABLEREG'		=> $this->config['pmregbar_enablereg'] ? true : false,
 			'PMREGBAR_ENABLE_TEXT'		=> $this->config['pmregbar_enable_text'] ? true : false,
 			'PMREGBAR_TEXT_FIELD'		=> (isset($this->config['pmregbar_text_field'])) ? $this->config['pmregbar_text_field'] : '',
+			'L_PMREGBAR_PM'				=> $this->user->lang('PMREGBAR_MESSAGE', $this->user->data['username']),
+			'L_PMREGBAR_WELCOME'		=> $this->user->lang('PMREGBAR_WELCOME', $this->config['sitename']),
 		));
 	}
 }
