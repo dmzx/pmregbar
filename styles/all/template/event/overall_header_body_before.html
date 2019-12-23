@@ -1,15 +1,15 @@
-<!-- IF not S_USER_LOGGED_IN and not S_IS_BOT and not S_IN_UCP and PMREGBAR_ENABLEREG -->
+{% if not S_USER_LOGGED_IN and not S_IS_BOT and not S_IN_UCP and PMREGBAR_ENABLEREG %}
 <div id="info">
 	<div id="infobar">
-		<a href="{U_REGISTER}"><span class="pm-reg"></span><!-- IF not PMREGBAR_ENABLE_TEXT -->{L_PMREGBAR_WELCOME}<!-- ELSE -->{PMREGBAR_TEXT_FIELD} <!-- ENDIF --><span class="pm-reg"></span></a>
+		<a href="{{ U_REGISTER }}"><span class="pm-reg"></span>{% if not PMREGBAR_ENABLE_TEXT %}{{ lang('PMREGBAR_WELCOME') }}{% else %}{{ PMREGBAR_TEXT_FIELD }} {% endif %}<span class="pm-reg"></span></a>
 	</div>
 </div>
-<!-- ENDIF -->
+{% endif %}
 
-<!-- IF not S_IS_BOT and S_USER_LOGGED_IN and S_DISPLAY_PM and (S_USER_NEW_PRIVMSG or S_USER_UNREAD_PRIVMSG) and PMREGBAR_ENABLEPM -->
+{% if not S_IS_BOT and S_USER_LOGGED_IN and S_DISPLAY_PM and (S_USER_NEW_PRIVMSG or S_USER_UNREAD_PRIVMSG) and PMREGBAR_ENABLEPM %}
 <div id="info">
 	<div id="infobar">
-		<a href="{U_PRIVATEMSGS}"><span class="pm-mail"></span>{L_PMREGBAR_PM}<span class="pm-mail"></span></a>
+		<a href="{{ U_PRIVATEMSGS }}"><span class="pm-mail"></span>{{ lang('PMREGBAR_PM') }}<span class="pm-mail"></span></a>
 	</div>
 </div>
-<!-- ENDIF -->
+{% endif %}

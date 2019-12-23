@@ -1,41 +1,42 @@
-<!-- INCLUDE overall_header.html -->
-<h1>{L_ACP_PMREGBAR}</h1>
+{% INCLUDE 'overall_header.html' %}
 
-<p>{L_PMREGBAR_VERSION}{L_COLON} {PMREGBAR_VERSION}</p>
+<h1>{{ lang('ACP_PMREGBAR') }}</h1>
 
-<form id="acp_pmregbar_config" method="post" action="{U_ACTION}">
+<p><img src="https://img.shields.io/badge/{{ lang('PMREGBAR_VERSION') }}-{{ PMREGBAR_VERSION }}-green.svg?style=plastic" /></p>
+
+<form id="acp_pmregbar_config" method="post" action="{{ U_ACTION }}">
 	<fieldset>
-	<legend>{L_ACP_PMREGBAR_CONFIG_SET}</legend>
-	<dl>
-		<dt><label for="pmregbar_enablepm">{L_PMREGBAR_ENABLEPM}{L_COLON}</label><br />
-		<span>{L_PMREGBAR_ENABLEPM_EXPLAIN}</span></dt>
-		<dd><label><input type="radio" class="radio" name="pmregbar_enablepm" value="1"<!-- IF PMREGBAR_ENABLEPM --> id="pmregbar_enablepm" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
-		<label><input type="radio" class="radio" name="pmregbar_enablepm" value="0"<!-- IF not PMREGBAR_ENABLEPM --> id="pmregbar_enablepm" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
-	</dl>
-	<dl>
-		<dt><label for="pmregbar_enablereg">{L_PMREGBAR_ENABLEREG}{L_COLON}</label><br />
-		<span>{L_PMREGBAR_ENABLEREG_EXPLAIN}</span></dt>
-		<dd><label><input type="radio" class="radio" name="pmregbar_enablereg" value="1"<!-- IF PMREGBAR_ENABLEREG --> id="pmregbar_enablereg" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
-		<label><input type="radio" class="radio" name="pmregbar_enablereg" value="0"<!-- IF not PMREGBAR_ENABLEREG --> id="pmregbar_enablereg" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
-	</dl>
-	<dl>
-		<dt><label for="pmregbar_enable_text">{L_PMREGBAR_ENABLE_TEXT}{L_COLON}</label><br />
-		<span>{L_PMREGBAR_ENABLE_TEXT_EXPLAIN}</span></dt>
-		<dd><label><input type="radio" class="radio" name="pmregbar_enable_text" value="1"<!-- IF PMREGBAR_ENABLE_TEXT --> id="pmregbar_enable_text" checked="checked"<!-- ENDIF --> /> {L_YES}</label>
-		<label><input type="radio" class="radio" name="pmregbar_enable_text" value="0"<!-- IF not PMREGBAR_ENABLE_TEXT --> id="pmregbar_enable_text" checked="checked"<!-- ENDIF --> /> {L_NO}</label></dd>
-	</dl>
-	<dl>
-		<dt><label for="pmregbar_text_field">{L_PMREGBAR_TEXT_FIELD}{L_COLON}</label><br />
-		<span>{L_PMREGBAR_TEXT_FIELD_EXPLAIN}</span></dt>
-		<dd><input name="pmregbar_text_field" type="text" id="pmregbar_text_field" class="text medium" value="{PMREGBAR_TEXT_FIELD}"	maxlength="255" /></dd>
-	</dl>
-	<p class="submit-buttons">
-		<input type="hidden" name="action" value="save" />
-		<input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp;
-		<input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" />
-		{S_FORM_TOKEN}
-	</p>
+		<legend>{{ lang('ACP_PMREGBAR_CONFIG_SET') }}</legend>
+		<dl>
+			<dt><label for="pmregbar_enablepm">{{ lang('PMREGBAR_ENABLEPM') }}{{ lang('COLON') }}</label><br />
+			<span>{{ lang('PMREGBAR_ENABLEPM_EXPLAIN') }}</span></dt>
+			<dd><label><input type="radio" class="radio" name="pmregbar_enablepm" value="1"{% if PMREGBAR_ENABLEPM %} id="pmregbar_enablepm" checked="checked"{% endif %} /> {{ lang('YES') }}</label>
+			<label><input type="radio" class="radio" name="pmregbar_enablepm" value="0"{% if not PMREGBAR_ENABLEPM %} id="pmregbar_enablepm" checked="checked"{% endif %} /> {{ lang('NO') }}</label></dd>
+		</dl>
+		<dl>
+			<dt><label for="pmregbar_enablereg">{{ lang('PMREGBAR_ENABLEREG') }}{{ lang('COLON') }}</label><br />
+			<span>{{ lang('PMREGBAR_ENABLEREG_EXPLAIN') }}</span></dt>
+			<dd><label><input type="radio" class="radio" name="pmregbar_enablereg" value="1"{% if PMREGBAR_ENABLEREG %} id="pmregbar_enablereg" checked="checked"{% endif %} /> {{ lang('YES') }}</label>
+			<label><input type="radio" class="radio" name="pmregbar_enablereg" value="0"{% if not PMREGBAR_ENABLEREG %} id="pmregbar_enablereg" checked="checked"{% endif %} /> {{ lang('NO') }}</label></dd>
+		</dl>
+		<dl>
+			<dt><label for="pmregbar_enable_text">{{ lang('PMREGBAR_ENABLE_TEXT') }}{{ lang('COLON') }}</label><br />
+			<span>{{ lang('PMREGBAR_ENABLE_TEXT_EXPLAIN') }}</span></dt>
+			<dd><label><input type="radio" class="radio" name="pmregbar_enable_text" value="1"{% if PMREGBAR_ENABLE_TEXT %} id="pmregbar_enable_text" checked="checked"{% endif %} /> {{ lang('YES') }}</label>
+			<label><input type="radio" class="radio" name="pmregbar_enable_text" value="0"{% if not PMREGBAR_ENABLE_TEXT %} id="pmregbar_enable_text" checked="checked"{% endif %} /> {{ lang('NO') }}</label></dd>
+		</dl>
+		<dl>
+			<dt><label for="pmregbar_text_field">{{ lang('PMREGBAR_TEXT_FIELD') }}{{ lang('COLON') }}</label><br />
+			<span>{{ lang('PMREGBAR_TEXT_FIELD_EXPLAIN') }}</span></dt>
+			<dd><input name="pmregbar_text_field" type="text" id="pmregbar_text_field" class="text medium" value="{{ PMREGBAR_TEXT_FIELD }}"	maxlength="255" /></dd>
+		</dl>
+		<p class="submit-buttons">
+			<input type="hidden" name="action" value="save" />
+			<input class="button1" type="submit" id="submit" name="submit" value="{{ lang('SUBMIT') }}" />&nbsp;
+			<input class="button2" type="reset" id="reset" name="reset" value="{{ lang('RESET') }}" />
+			{{ S_FORM_TOKEN }}
+		</p>
 	</fieldset>
 </form>
 
-<!-- INCLUDE overall_footer.html -->
+{% INCLUDE 'overall_footer.html' %}
