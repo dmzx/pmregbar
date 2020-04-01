@@ -2,19 +2,19 @@
 	"name": "dmzx/pmregbar",
 	"type": "phpbb-extension",
 	"description": "This extension will add PM Notify & Guest Register bar.",
-	"homepage": "http://www.dmzx-web.net",
-	"version": "1.0.5",
-	"time": "2017-01-23",
+	"homepage": "https://www.dmzx-web.net",
+	"version": "1.0.6",
+	"time": "2019-12-23",
 	"keywords": [
 		"phpbb",
 		"extension",
 		"pmregbar"
 	],
-	"license": "GPL-2.0",
+	"license": "GPL-2.0-only",
 	"authors": [
 		{
 			"name": "dmzx",
-			"homepage": "http://www.dmzx-web.net",
+			"homepage": "https://www.dmzx-web.net",
 			"email": "info@dmzx-web.net",
 			"role": "Extension Developer"
 		},
@@ -26,17 +26,19 @@
 	],
 	"require": {
 		"php": ">=5.3.3",
-		"phpbb/phpbb": ">=3.1.0,<3.3"
+		"composer/installers": "~1.0.0",
+		"phpbb/phpbb": ">=3.1.0,<4.4.0@dev"
 	},
 	"extra": {
 		"display-name": "PM Notify & Guest Register bar",
 		"soft-require": {
-			"phpbb/phpbb": ">=3.1.0,<3.3"
+			"phpbb/phpbb": ">=3.1.0,<4.4.0@dev"
 		},
 		"version-check": {
 			"host": "www.dmzx-web.net",
 			"directory": "/versions",
-			"filename": "pmregbar_version.json"
+			"filename": "pmregbar_version.json",
+			"ssl": true
 		}
 	}
 }

@@ -2,7 +2,7 @@
 /**
 *
 * @package phpBB Extension - PM Notify & Guest Register bar
-* @copyright (c) 2015 dmzx - http://www.dmzx-web.net
+* @copyright (c) 2015 dmzx - https://www.dmzx-web.net
 * @license http://opensource.org/licenses/gpl-2.0.php GNU General Public License v2
 * @Author Stoker - http://www.phpbb3bbcodes.com
 *
@@ -19,10 +19,12 @@ var $u_action;
 		global $user, $template, $request, $config;
 
 		$this->tpl_name = 'acp_pmregbar_config';
+		$user->add_lang_ext('dmzx/pmregbar', 'acp_pmregbar');
 		$this->page_title = $user->lang['ACP_PMREGBAR_CONFIG_SETTINGS'];
 		add_form_key('acp_pmregbar_config');
 
 		$submit = $request->is_set_post('submit');
+
 		if ($submit)
 		{
 			if (!check_form_key('acp_pmregbar_config'))
